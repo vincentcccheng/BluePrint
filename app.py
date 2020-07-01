@@ -3,7 +3,7 @@ from minnows import minnows
 from fish import fish
 from sharks import sharks
 
-#app = Flask(__name__)
+#app = Flask(__name__) --7/1/--test
 app = Flask('blueprints_example2')
 app.register_blueprint(minnows, url_prefix='/minnows')
 app.register_blueprint(fish, url_prefix='/fish')
